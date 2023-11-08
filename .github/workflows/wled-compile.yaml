@@ -30,7 +30,6 @@ jobs:
         echo 'extends = env:esp32dev' >>platformio.ini
         echo 'build_flags = ${env:esp32dev.build_flags}
           -D WLED_WATCHDOG_TIMEOUT=0
-          -D WLED_RELEASE_NAME=WLED_4CH_SPI
           -D SERVERNAME='"WLED-4CH"'
           -D DATA_PINS=2,4,16,17
           -D PIXEL_COUNTS=100,100,100,100
